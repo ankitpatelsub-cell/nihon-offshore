@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<title>Nihon Offshore — 日本対応のインド開発チーム</title>
+<style>
+  :root{
+    --ink:#16263a; --blue:#1f5fae; --blue2:#2f8fe0; --red:#e23b3b; --bg:#f6f8fb;
+    --card:#fff; --muted:#5b6b7d; --line:#e3e9f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--blue);text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:800;font-size:20px;color:var(--ink)}
+  .logo span{color:var(--blue)}
+  .nav a.muted{color:var(--muted);font-size:14px;margin-left:18px}
+  .lang{margin-left:14px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;background:#fff}
+  .hero{background:linear-gradient(135deg,#1f5fae,#2f8fe0);color:#fff;padding:72px 0 84px}
+  .hero h1{font-size:40px;font-weight:900;letter-spacing:-.5px;margin-bottom:14px}
+  .hero p{font-size:18px;max-width:680px;opacity:.95}
+  .pill{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:18px}
+  .cta{display:inline-block;margin-top:26px;background:#fff;color:var(--blue);font-weight:800;padding:14px 28px;border-radius:12px;font-size:16px}
+  .cta.red{background:var(--red);color:#fff}
+  section{padding:60px 0}
+  h2{font-size:28px;font-weight:900;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:28px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card .price{color:var(--blue);font-weight:800;font-size:15px;margin:10px 0}
+  .card ul{list-style:none;color:var(--muted);font-size:14px}
+  .card li{padding:4px 0;border-top:1px dashed var(--line)}
+  .why{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .why div{display:flex;gap:12px;align-items:flex-start}
+  .why .ic{font-size:22px}
+  .why b{display:block}
+  .why small{color:var(--muted)}
+  .steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+  .step:before{counter-increment:s;content:counter(s);display:inline-flex;width:30px;height:30px;background:var(--blue);color:#fff;border-radius:50%;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+  .step b{display:block;margin-bottom:4px}
+  .step small{color:var(--muted)}
+  .contact{background:linear-gradient(135deg,#16263a,#1f5fae);color:#fff;border-radius:20px;padding:40px;text-align:center}
+  .contact a.btn{display:inline-block;margin-top:16px;background:var(--red);color:#fff;font-weight:800;padding:14px 30px;border-radius:12px}
+  footer{padding:30px 0;color:var(--muted);font-size:13px;text-align:center}
+  /* BULLETPROOF language toggle: whole-section wrappers */
+  .lang-en{display:none}
+  body.en .lang-ja{display:none}
+  body.en .lang-en{display:block}
+  @media(max-width:820px){.grid3,.why,.steps{grid-template-columns:1fr}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">Nihon<span>Offshore</span></div>
+    <div>
+      <a class="muted" href="#services">サービス</a>
+      <a class="muted" href="#why">強み</a>
+      <a class="muted" href="#contact">お問い合わせ</a>
+      <button class="lang" onclick="document.body.classList.toggle('en')">EN / 日本語</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="lang-ja">
+      <span class="pill">言語の壁がありません</span>
+      <h1>インドの開発チームを、<br>日本の言葉で直接マネジメント。</h1>
+      <p>日本での実務経験（1.5年）とJLPT N3を持つシニアエンジニアが、インドの開発チームを翻訳なしで率います。コストを下げて、品質とスピードを保つ。</p>
+      <a class="cta" href="#contact">小さな案件から相談する</a>
+    </div>
+    <div class="lang-en">
+      <span class="pill">No language barrier</span>
+      <h1>India's dev team, managed in Japanese.</h1>
+      <p>A senior engineer who worked on-site in Japan (JLPT N3) leads an Indian dev pod with zero translators. Lower cost, same quality and speed.</p>
+      <a class="cta" href="#contact">Start with a small project</a>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="lang-ja">
+      <h2>なぜ私たち？</h2>
+      <p class="sub">日本企業がインド開発にためらう「言語・文化の壁」を、私が直接なくします。</p>
+    </div>
+    <div class="lang-en">
+      <h2>Why us</h2>
+      <p class="sub">We remove the #1 reason Japan clients hesitate on India vendors: the language/culture gap.</p>
+    </div>
+    <div class="why">
+      <div><div class="ic">🇯🇵</div><div><div class="lang-ja"><b>日本実務経験 1.5年</b><small>日本側リーダー・クライアントと直接対応</small></div><div class="lang-en"><b>1.5 yrs on-site in Japan</b><small>Direct liaison with Japan-side leaders & clients</small></div></div></div>
+      <div><div class="ic">🗣️</div><div><div class="lang-ja"><b>JLPT N3 日本語</b><small>仕様・進捗を日本語で報告</small></div><div class="lang-en"><b>JLPT N3 Japanese</b><small>Specs & status calls in Japanese</small></div></div></div>
+      <div><div class="ic">💻</div><div><div class="lang-ja"><b>14年 フルスタック</b><small>.NET / C# / React / SQL</small></div><div class="lang-en"><b>14 yrs full-stack</b><small>.NET / C# / React / SQL</small></div></div></div>
+      <div><div class="ic">👥</div><div><div class="lang-ja"><b>13名のチームリード</b><small>見積・計画・品質管理を一貫</small></div><div class="lang-en"><b>Led 13 engineers</b><small>Estimation, planning, QA end-to-end</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="lang-ja"><h2>サービス</h2><p class="sub">まずは小さなプロトタイプから。大きなリスクは不要です。</p></div>
+    <div class="lang-en"><h2>Services</h2><p class="sub">Start with a small prototype. No big risk.</p></div>
+    <div class="grid3">
+      <div class="card">
+        <div class="lang-ja"><h3>プロトタイプ sprint</h3><div class="price">¥30万〜</div>
+          <ul><li>3〜4週間のスコープ済み試作</li><li>Web / React / .NET 対応</li><li>デモ＋引き継ぎドキュメント</li></ul></div>
+        <div class="lang-en"><h3>Prototype Sprint</h3><div class="price">from ¥300k (~$2k)</div>
+          <ul><li>3–4 wk scoped prototype</li><li>Web / React / .NET</li><li>Demo + handoff doc</li></ul></div>
+      </div>
+      <div class="card">
+        <div class="lang-ja"><h3>月額リテーナー</h3><div class="price">¥60万〜/月</div>
+          <ul><li>2〜3名のポッド＋PM（私）</li><li>機能開発・保守・内製ツール</li><li>毎週 JP 進捗会議</li></ul></div>
+        <div class="lang-en"><h3>Monthly Retainer</h3><div class="price">¥600k+/mo (~$4k+)</div>
+          <ul><li>2–3 eng pod + you as PM</li><li>Features / maintenance / tools</li><li>Weekly JP status call</li></ul></div>
+      </div>
+      <div class="card">
+        <div class="lang-ja"><h3>モダナイゼーション診断</h3><div class="price">¥15万〜</div>
+          <ul><li>レガシー .NET/MVC 調査</li><li>モダン化ロードマップ</li><li>リテーナーへ移行しやすい</li></ul></div>
+        <div class="lang-en"><h3>Modernization Audit</h3><div class="price">from ¥150k</div>
+          <ul><li>Legacy .NET/MVC assessment</li><li>Modernization roadmap</li><li>Often converts to retainer</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="lang-ja"><h2>進め方</h2></div>
+    <div class="lang-en"><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="step"><div class="lang-ja"><b>ヒアリング</b><small>課題・予算・スケジュールを日本語で</small></div><div class="lang-en"><b>Discovery</b><small>Pain, budget, timeline — in Japanese</small></div></div>
+      <div class="step"><div class="lang-ja"><b>提案</b><small>48時間以内に見積を提出</small></div><div class="lang-en"><b>Proposal</b><small>Quote within 48h</small></div></div>
+      <div class="step"><div class="lang-ja"><b>開発</b><small>毎日進捗、週次JP会議</small></div><div class="lang-en"><b>Build</b><small>Daily updates, weekly JP call</small></div></div>
+      <div class="step"><div class="lang-ja"><b>納品</b><small>動く成果物＋引き継ぎ</small></div><div class="lang-en"><b>Deliver</b><small>Working deliverable + handoff</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="lang-ja"><h2>まずは小さな案件から</h2><p>翻訳不要の開発チームをお試しください。お気軽にお問い合わせください。</p><a class="btn" href="#contact">お問い合わせ</a></div>
+      <div class="lang-en"><h2>Start with a small project</h2><p>Try a translator-free dev team. Get in touch to talk.</p><a class="btn" href="#contact">Contact us</a></div>
+      <p style="margin-top:14px;font-size:14px;opacity:.85">Nihon Offshore — Japan-fluent offshore development</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Nihon Offshore — Japan-fluent offshore development.</div>
+</footer>
+</body>
+</html>
